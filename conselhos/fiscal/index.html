@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conselho Fiscal | EVRED - Evangelho do Reino de Deus</title>
+
+    <link href="/assets/styles/2jxUGV.css" rel="stylesheet" />
+    <link href="/assets/image/Flaticon.png" type="image/x-icon" rel="shortcut icon"/>
+
+    <!-- Google Analitycs -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-277XY024XC"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-277XY024XC");
+      gtag("event", "login", { method: "Google" });
+
+      // Configure a target
+      gtag("config", "GA_MEASUREMENT_ID_1");
+      gtag("config", "GA_MEASUREMENT_ID_2", { groups: "agency" });
+      gtag("config", "GA_MEASUREMENT_ID_3", { groups: "agency" });
+      // Route this sign_in event to Analytics IDs in the 'agency' group:
+      gtag("event", "sign_in", { send_to: "agency" });
+
+      // Get a reference to the form element, assuming
+      // it contains the ID attribute "signup-form".
+      var form = document.getElementById("signup-form");
+
+      // Add a listener for the "submit" event.
+      form.addEventListener("submit", function (event) {
+        // Prevent the browser from submitting the form
+        // and thus unloading the current page.
+
+        event.preventDefault();
+
+        // Send the event to Google Analytics and
+        // resubmit the form once the hit is done.
+        gtag("event", "signup_form_complete", {
+          event_callback: function () {
+            form.submit();
+          },
+        });
+      });
+    </script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@800&family=Rubik:wght@400;500;600&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Overpass:wght@800&family=Rubik:wght@400;500;600&display=swap');
+    </style>
+  </head>
+  <body id="body">
+    <header class="only-headers" id="header">
+      <section class="header">
+        <div class="onlys-header-logo">
+          <img src="/assets/image/Logo-EVRED.png" alt="Logo | EVRED - Evangelho do Reino de Deus">
+        </div>
+        <div class="onlys-nav">
+          <nav class="container">
+            <div class="menu">
+                <ul class="grid">
+                    <li><a class="navs" href="https://www.evred.com.br" target="_blank">EVRED</a></li>
+                    <li><a class="navs" href="/conselhos/fiscal/">Conselho Fiscal</a></li>
+                    <li><a class="navs" href="/conselhos/etica/">Conselho de Ética</a></li>
+                    <li><a class="navs" id="navs" href="/central-de-ajuda/">Central de Ajuda</a></li>
+                </ul>
+            </div>
+            <div class="toggle open">
+              <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+                <path d="M0 0h24v24H0V0z" fill="none" />
+                <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+              </svg>
+            </div>
+            <div class="toggle close">
+              <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+                <path d="M0 0h24v24H0V0z" fill="none" />
+                <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z" />
+              </svg>
+            </div>
+          </nav>
+        </div>
+      </section>
+      <section class="line">
+        <div class="line-header"></div>
+      </section>
+    </header>
+    <main class="only-mains">
+      <section class="only-one-section">
+        <div class="advice-text-only">
+          <h1>Conselho<br>Fiscal<b>.</b></h1>
+          <p>Com o objetivo de fiscalizar as bases do EVRED, o conselho fiscal mantem a diretoria informada.</p>
+          <nav class="buttons-one">
+            <a href="#o-quem-somos">O Quem Somos?</a>
+            <!-- <a href="/conselhos/fiscal/chamado.html" id="chamado">Iniciar Chamado</a> -->
+          </nav>
+        </div>
+        <div class="advice-img-only">
+          <img src="/assets/svg/Modern woman-pana.svg" alt="Mesa de escritório.">
+        </div>
+      </section>
+      <section class="line">
+        <div class="line-section-one"></div>
+      </section>
+      <section class="only-two-section" id="o-quem-somos">
+        <div class="abount-img-only">
+          <img src="/assets/svg/News-rafiki.svg" alt="Novidades chegando.">
+        </div>
+        <div class="abount-text-only">
+          <h3>Pra Que Serve<br>O <b>Conselho Fiscal</b>?</h3>
+          <p>O Conselho Fiscal foi criado com o objetivo de fiscalizar a administração das bases do EVRED, no que se refere às questões financeiras e contábeis, para entregar a transparência ao membros e pastores.</p>
+          <p class="text-info"><b>O Conselho Fiscal e Ética trabalha juntamente com o objetivo de manter membros e pastores executando suas atividade segundo o Estatuto do EVRED.</b></p>
+          <p>Para que o conselho possa trabalhar e fazer suas obrigações com eficiência e transparência a plataforma advice, que tem objetivo de entregar voz para os membros do EVRED, tanto nos conselhos como na central de ajuda.</p>
+        </div>
+      </section>
+      <section class="lien">
+        <div class="line-abount"></div>
+      </section>
+      <section class="only-three-section">
+        <div class="cont">
+          <div class="information-title-only">
+            <h4>Informações<br><b>Adicionais</b></h4>
+          </div>
+          <div class="informarion-blocks-only">
+            <div class="blocks-one">
+              <img src="/assets/svg/policy_black_24dp 1.svg" alt="Minha privacidade.">
+              <h6>Privacidade</h6>
+              <p>Todas as solicitações são <b>entregues anonimamente</b> para os membros dos conselhos. Os dados ficam armazenados no banco de dados mas poderá <b>pedir a exclusão deles a qualquer momento</b>.</p>
+            </div>
+            <div class="blocks-two">
+              <img src="/assets/svg/track_changes_black_24dp 1.svg" alt="Sonar de atualição.">
+              <h6>Atualização</h6>
+              <p>Sempre que houver uma atualização sobre seu chamado será <b>notificado por e-mail</b>, por isso para não perder nada coloque o e-mail <b>oi@evred.com.br</b> na lista de e-mail para não <b>cair no spam</b>.</p>
+            </div>
+            <div class="blocks-three">
+              <img src="/assets/svg/contact_support_black_24dp 1.svg" alt="Balão de Ajuda.">
+              <h6>Ajuda</h6>
+              <p>A <a href="/central-de-ajuda/" target="_blank"><b>Central de Ajuda</b></a> foi criada para retirar suas dúvidas e poder entrar em contato <b>mais facilmente</b> ou ver documentações de problemas de <b>outros usuários</b> que já foram resolvidos.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="line">
+        <div class="line-infos"></div>
+      </section>
+      <section class="called-four-only">
+        <div class="called-only">
+          <h4>Enviar<br>Chamado!</h4>
+          <a href="/conselhos/fiscal/chamado.html">Avançar!</a>
+        </div>
+      </section>
+    </main>
+    <footer class="only-footers">
+      <section class="line">
+        <div class="line-footer"></div>
+      </section>
+      <section class="only-footer">
+        <div class="footer-copy">
+          <p>EVRED © 2021<br>Todos Dieitos Reservados.</p>
+        </div>
+        <div class="only-rod">
+          <nav class="raps">
+            <a id="map" href="/sitemap" target="_blank">Mapa do Site</a>
+          </nav>
+          <button class="only-top" id="top-back">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+        </div>
+      </section>
+    </footer>
+  </body>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="/assets/javascript/2jxUGV.js"></script>
+</html>

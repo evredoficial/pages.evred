@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Não encontramos o que você procura | EVRED</title>
+
+    <link href="/assets/styles/by2qBE.css" rel="stylesheet" />
+    <link href="/assets/image/Flaticon.png" type="image/x-icon" rel="shortcut icon"/>
+
+    <!-- Google Analitycs -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-277XY024XC">
+    </script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-277XY024XC");
+      gtag("event", "login", { method: "Google" });
+
+      // Configure a target
+      gtag("config", "GA_MEASUREMENT_ID_1");
+      gtag("config", "GA_MEASUREMENT_ID_2", { groups: "agency" });
+      gtag("config", "GA_MEASUREMENT_ID_3", { groups: "agency" });
+      // Route this sign_in event to Analytics IDs in the 'agency' group:
+      gtag("event", "sign_in", { send_to: "agency" });
+
+      // Get a reference to the form element, assuming
+      // it contains the ID attribute "signup-form".
+      var form = document.getElementById("signup-form");
+
+      // Add a listener for the "submit" event.
+      form.addEventListener("submit", function (event) {
+        // Prevent the browser from submitting the form
+        // and thus unloading the current page.
+
+        event.preventDefault();
+
+        // Send the event to Google Analytics and
+        // resubmit the form once the hit is done.
+        gtag("event", "signup_form_complete", {
+          event_callback: function () {
+            form.submit();
+          },
+        });
+      });
+    </script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Overpass:wght@800&family=Rubik:wght@400;500;600&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Overpass:wght@800&family=Rubik:wght@400;500;600&display=swap");
+    </style>
+  </head>
+  <body id="body">
+      <div class="main">
+          <div class="background"></div>
+          <div class="subjects">
+              <div class="header" id="header">
+                <a class="header-img" href="https://www.evred.com.br/">
+                    <img src="/assets/image/Logo-EVRED.png" alt="EVRED - Evangelho do Reino de Deus | Logo">
+                </a>
+                <div class="onlys-nav">
+                    <nav class="container">
+                      <div class="menu">
+                        <div class="background-color"></div>
+                          <ul class="grid">
+                              <li><a class="navs" id="novs" href="https://www.evred.com.br" target="_blank">EVRED</a></li>
+                              <li><a class="navs" id="navs" href="/conselhos/fiscal/">Conselho Fiscal</a></li>
+                              <li><a class="navs" id="navs" href="/conselhos/etica/">Conselho de Ética</a></li>
+                              <li><a class="navs" id="navss" href="/central-de-ajuda/">Central de Ajuda</a></li>
+                          </ul>
+                      </div>
+                      <div class="toggle open">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+                          <path d="M0 0h24v24H0V0z" fill="none" />
+                          <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+                        </svg>
+                      </div>
+                      <div class="toggle close">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+                          <path d="M0 0h24v24H0V0z" fill="none" />
+                          <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z" />
+                        </svg>
+                      </div>
+                    </nav>
+                </div>
+              </div>
+              <div class="err-404">
+                  <section class="menssage">
+                      <h1>404</h1>
+                      <p>Desculpa, não encontramos oque você pediu, mas não se preocupe aprecie essa paisagem antes de voltar para a casa.</p>
+                      <nav>
+                          <a id="home" href="https://www.evred.com.br/">Home</a>
+                          <a href="/sitemap.html">SiteMap</a>
+                      </nav>
+                  </section>
+              </div>
+              <div class="footer">
+                  <p>EVRED © 2021 - Todos Direitos Reservados</p>
+              </div>
+          </div>
+      </div>
+  </body>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="/assets/javascript/2jxUGV.js"></script>
+</html>

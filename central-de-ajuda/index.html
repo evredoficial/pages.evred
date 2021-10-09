@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="refresh" content="1; URL='/err/701.html'"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Central de Ajuda | EVRED - Evangelho do Reino de Deus</title>
+
+    <link href="/assets/styles/79MKR7t.css" rel="stylesheet" />
+    <link href="/assets/image/Flaticon.png" type="image/x-icon" rel="shortcut icon"/>
+
+    <!-- Google Analitycs -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-277XY024XC"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-277XY024XC");
+      gtag("event", "login", { method: "Google" });
+
+      // Configure a target
+      gtag("config", "GA_MEASUREMENT_ID_1");
+      gtag("config", "GA_MEASUREMENT_ID_2", { groups: "agency" });
+      gtag("config", "GA_MEASUREMENT_ID_3", { groups: "agency" });
+      // Route this sign_in event to Analytics IDs in the 'agency' group:
+      gtag("event", "sign_in", { send_to: "agency" });
+
+      // Get a reference to the form element, assuming
+      // it contains the ID attribute "signup-form".
+      var form = document.getElementById("signup-form");
+
+      // Add a listener for the "submit" event.
+      form.addEventListener("submit", function (event) {
+        // Prevent the browser from submitting the form
+        // and thus unloading the current page.
+
+        event.preventDefault();
+
+        // Send the event to Google Analytics and
+        // resubmit the form once the hit is done.
+        gtag("event", "signup_form_complete", {
+          event_callback: function () {
+            form.submit();
+          },
+        });
+      });
+    </script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@800&family=Rubik:wght@400;500;600&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Overpass:wght@800&family=Rubik:wght@400;500;600&display=swap');
+    </style>
+</head>
+<body id="body">
+    <header class="only-headers" id="header">
+        <section class="header">
+          <div class="onlys-header-logo">
+            <img src="/assets/image/Logo-EVRED.png" alt="Logo | EVRED - Evangelho do Reino de Deus">
+          </div>
+          <div class="onlys">
+            <button onclick="window.location.href='/hc/new.html'" id="nex-submits"><span>Enviar</span> Solicitação</button>
+          </div>
+        </section>
+        <section class="line">
+          <div class="line-header"></div>
+        </section>
+      </header>
+      <main class="only-main"> 
+        <section class="pastas-artigos">
+          <div class="titles-of-blocks">
+            <h2>Central de Ajuda</h2>
+            <div class="blocks">
+              <line>
+                <a href="/central-de-ajuda/hc/artigos/evred/">
+                  <div class="div">
+                    <img src="/assets/svg/icons8-pasta.svg" alt="Pastas">
+                  </div>
+                  <span>EVRED</span>
+                </a>
+                <a href="/central-de-ajuda/hc/artigos/advice/">
+                  <div class="div">
+                    <img src="/assets/svg/icons8-pasta.svg" alt="Pastas">
+                  </div>
+                  <span>Conselhos</span>
+                </a>
+                <a href="/central-de-ajuda/hc/artigos/term/">
+                  <div class="div">
+                    <img src="/assets/svg/icons8-pasta.svg" alt="Pastas">
+                  </div>
+                  <span>Termos</span>
+                </a>
+              </line>
+              <line>
+                <a href="/central-de-ajuda/hc/artigos/helps/">
+                  <div class="div">
+                    <img src="/assets/svg/icons8-pasta.svg" alt="Pastas">
+                  </div>
+                  <span>Dúvidas</span>
+                </a>
+                <a href="/central-de-ajuda/hc/artigos/aplicativos/">
+                  <div class="div">
+                    <img src="/assets/svg/icons8-pasta.svg" alt="Pastas">
+                  </div>
+                  <span>Aplicativos<br>Externos</span>
+                </a>
+              </line>
+            </div>
+            <div class="recentes">
+              <div class="titles-recentes">
+                <h3>Atividades Recentes</h3>
+                <section class="block-recente">
+                  <div class="rec1">
+                    <div class="images">
+                      <img src="/assets/svg/archive 2.svg" alt="Arquivos">
+                    </div>
+                    <div class="texts">
+                      <a href="">Post 1 - Isso é um link</a>
+                      <line class="liness">
+                        <p>Isso é um texto semples sobre o post. - Não é um link</p>
+                        <p>Data de Publicação</p>
+                      </line>
+                    </div>
+                  </div>
+                  <div class="divider"></div>
+                  <div class="rec2">
+                    <div class="images">
+                      <img src="/assets/svg/archive 2.svg" alt="Arquivos">
+                    </div>
+                    <div class="texts">
+                      <a href="">Post 2 - Isso é um link</a>
+                      <line class="liness">
+                        <p>Isso é um texto semples sobre o post. - Não é um link</p>
+                        <p>Data de Publicação</p>
+                      </line>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+          <div class="solicitacao-central">
+            <div class="section">
+              <h2>Enviar<br>Solicitação</h2>
+              <button onclick="window.location.href='/hc/new.html'"><span>Enviar</span></button>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="only-footer">
+        <section class="footer">
+          <div class="links">
+            <line>
+            <section class="evred">
+              <h6>EVRED</h6>
+              <nav class="evreds">
+                <a href="https://www.evred.com.br">EVRED</a>
+                <a href="https://www.evred.com.br/contato">Contato</a>
+                <a href="https://www.evred.com/projeto-pezinho">Projeto Pezinho</a>
+                <a href="https://www.evred.com/jovens-evred">Jovens - EVRED</a>
+              </nav>
+            </section>
+            <section class="servicos">
+              <h6>Serviços</h6>
+              <nav class="help-advice">
+                <a href="/central-de-ajuda/">Central de Ajuda</a>
+                <a href="/central-de-ajuda/hc/artigos/help/preciso-de-ajuda.html">Preciso de Ajuda</a>
+                <a href="/conselhos/fiscal/">Conselho Fiscal</a>
+                <a href="/conselhos/etica/">Conselho de Ética</a>
+              </nav>
+            </section>
+            <line>
+              <section class="terms">
+                <h6>Termos</h6>
+                <nav class="terms">
+                  <a href="/termos/privacidade.html">Política de Privacidade</a>
+                  <a href="/termos/termo-de-uso.html">Termo de Uso</a>
+                  <a href="/termos/privacidade.html">Direito Autorais</a>
+                  <a href="/termos/termo-de-contato.html">Termo de Contato</a>
+                </nav>
+              </section>
+              <section class="institucional">
+                <h6>Institucional</h6>
+                <nav class="institus">
+                  <a href="/nosso-chamado.html">Nosso Chamado</a>
+                  <a href="/colabore.html">Colabore</a>
+                  <a href="/sitemap.html">Sitemap</a>
+                  <a href="mailto:contato@evred.com.br">contato@evred.com.br</a>
+                </nav>
+              </section>
+            </line>
+          </div>
+          <div class="line-logo">
+            <div class="line-footer"></div>
+            <img src="/assets/image/Logo-EVRED.png" alt="EVRED | Evangelho do Reino de Deus"/>
+            <div class="line-footer"></div>
+          </div>
+          <p>EVRED © 2021 - Todos Direitos Reservados</p>
+        </section>
+      </footer>
+    </body>
+</body>
+</html>
