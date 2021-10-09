@@ -1,0 +1,230 @@
+:root {
+  --background: #ffffff;
+  --color-one: #636789;
+  --color-two: #3F4359;
+  --color-three: #C3C1D1;
+  --color-four: #ECF0F1;
+  --color-five: #767676;
+  --scrollbar: #4d4d57;
+  --scrollbar-background: transparent;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--background);
+  color: var(--color-two);
+}
+
+header,
+footer {
+  user-select: none;
+}
+
+::-webkit-scrollbar,
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar,
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-background);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 0;
+  scrollbar-width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar);
+}
+
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+h5::selection,
+h6::selection,
+p::selection,
+b::selection,
+li::selection,
+a::selection,
+img::selection,
+div::selection {
+  color: var(--color-four);
+  background-color: var(--scrollbar);
+}
+
+@media screen and (min-width: 1040px) {
+  .header {
+    margin: 0 150px !important;
+  }
+}
+
+.header-only {
+  margin-bottom: 25px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 50px;
+  margin: 0;
+}
+
+.header img {
+  width: 4.6rem;
+}
+
+.header a {
+  background-color: var(--color-one);
+  border-radius: 5px;
+  padding: 10px 25px;
+  font: 400 15px 'Rubik', Sans-Serif;
+  color: var(--color-four);
+  text-decoration: none;
+}
+
+.header a:hover {
+  background-color: var(--color-two);
+  transition: 0.5s;
+}
+
+.divisor-line-header {
+  height: 2px;
+  background-color: var(--color-one);
+}
+
+.main-only {
+  margin: calc(25px + 75px) 50px 100px 50px;
+}
+
+.map {
+  display: -moz-box;
+  display: flex;
+  -moz-box-pack: center;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+.site {
+  width: 750px;
+  -moz-box-orient: vertical;
+  -moz-box-direction: normal;
+  flex-direction: column;
+}
+
+.site h1 {
+  font: 800 35px 'Overpass', Sans-serif;
+  text-align: center;
+  color: var(--color-two);
+}
+
+.sitemap {
+  margin-top: 20px;
+}
+
+.coluns {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+}
+
+#line {
+  margin-right: 8rem;
+}
+
+nav {
+  display: grid;
+}
+
+h6 {
+  font: 600 18px 'Rubik', sans-serif;
+  margin-bottom: 10px;
+}
+
+.main-only a {
+  font: 400 15px 'Heebo', sans-serif;
+  color: var(--color-five);
+  margin-top: 5px;
+  text-decoration: none;
+  position: relative;
+  width: max-content;
+}
+
+.main-only a:hover {
+  color: var(--color-one);
+}
+
+.main-only a::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: var(--color-one);
+
+  position: absolute;
+  left: 0;
+  bottom: -0.3rem;
+
+  transition: width 0.3s;
+}
+
+.main-only a:hover::after {
+  width: 100%;
+}
+
+.base, .termos, .suporte {
+  margin-bottom: 20px;
+}
+
+.footer-only {
+  background: var(--color-two);
+  padding: 1rem;
+}
+
+.copyright p {
+  color: var(--color-three);
+  font: 400 15px 'Rubik', sans-serif;
+  text-align: center;
+}
+
+@media screen and (max-width: 572px) {
+  .map {
+    padding: 0;
+  }
+
+  #line {
+    margin-right: 5rem;
+  }
+}
+
+@media screen and (max-width: 497px) {
+  .coluns {
+    display: grid;
+    justify-content: flex-start;
+  }
+
+  #line {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
+  .site h1 {
+    text-align: start;
+  }
+
+  .header {
+    padding: 25px 25px;
+  }
+
+  .copyright p {
+    font-size: 12px;
+  }
+}
