@@ -1,0 +1,274 @@
+:root {
+  --background: #181720;
+  --background-secondary: #1f1d2b;
+  --color-primary: #c3c1d1;
+  --color-secondary: #808191;
+  --color-icons: linear-gradient(
+    132.57deg,
+    #6d5fcf -5.3%,
+    rgba(29, 92, 166, 0.58) 134.38%
+  );
+  --color-hover: #6c5ecf;
+  --color-back-top: #111014;
+  --linear-primary: linear-gradient(
+    90deg,
+    #1c5ca6 32.27%,
+    #1e5ca7 32.28%,
+    #6c5ecf 81.91%
+  );
+  --linear-secondary: linear-gradient(90deg, #6c5ecf 2.21%, #1f1d2b 81.11%);
+  --scrollbar: #4d4d57;
+  --scrollbar-background: transparent;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: white;
+  color: var(--color-primary);
+}
+
+header,
+footer {
+  user-select: none;
+}
+
+::-webkit-scrollbar,
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-background);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 0;
+  scrollbar-width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar);
+}
+
+.main {
+  background-image: url(../image/fog.png);
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+
+  background: #000000;
+  background-blend-mode: multiply;
+  opacity: 0.5;
+}
+
+.subjects {
+  position: relative;
+}
+
+#body {
+  width: 100%;
+  height: 100%;
+}
+
+.footer {
+  position: fixed;
+  bottom: 10px;
+  text-align: center;
+  width: -webkit-fill-available;
+}
+
+.footer p {
+  font: 400 12px "Heebo", Sans-serif;
+  color: var(--color-secondary);
+  font-feature-settings: "salt" on, "liga" off;
+  user-select: none;
+}
+
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+h5::selection,
+h6::selection,
+p::selection,
+b::selection,
+li::selection,
+a::selection,
+img::selection,
+div::selection,
+nav::selection {
+  color: var(--color-primary);
+  background-color: var(--scrollbar);
+}
+
+/* Header */
+
+.header {
+  padding: 25px 50px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-img img {
+  width: 5rem;
+}
+
+.toggle svg {
+  width: 4.3rem;
+  fill: var(--color-primary);
+}
+
+.toggle svg:hover {
+  fill: var(--color-hover);
+  transition: 0.5s;
+}
+
+.navs {
+  font: 500 15px "Rubik", Sans-serif;
+  text-decoration: none;
+  color: var(--color-primary);
+}
+
+.navs {
+  margin-right: 30px;
+}
+
+#navss {
+  margin-right: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+.grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav .menu a {
+  transition: color 0.2s;
+  position: relative;
+}
+
+nav .menu a::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: var(--color-primary);
+
+  position: absolute;
+  left: 0;
+  bottom: -0.7rem;
+
+  transition: width 0.3s;
+}
+
+nav .menu a:hover::after {
+  width: 100%;
+}
+
+.open,
+.close {
+  display: none;
+}
+
+@media screen and (max-width: 857px) {
+  #navs, #navss {
+    display: none;
+  }
+
+  .navs {
+    margin: 0;
+  }
+}
+
+/* Main - Err */
+
+.err-404 {
+  position: initial;
+  margin-top: 12%;
+  text-align: center;
+  width: -webkit-fill-available;
+}
+
+.menssage h1 {
+  font: 800 70px "Overpass", Sans-serif;
+}
+
+.menssage p {
+  font: 400 14px "Heebo", sans-serif;
+  max-width: 455px;
+  margin: auto;
+  color: var(--color-primary);
+}
+
+.menssage nav {
+    margin-top: 10px;
+}
+
+.menssage a {
+  font: 400 15px "Rubik", Sans-serif;
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.menssage a {
+  transition: color 0.2s;
+  position: relative;
+}
+
+.menssage a::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: var(--color-primary);
+
+  position: absolute;
+  left: 0;
+  bottom: -0.4rem;
+
+  transition: width 0.3s;
+}
+
+.menssage a:hover::after {
+  width: 100%;
+}
+
+#home {
+    margin-right: 15px;
+}
+
+.header {
+  user-select: none;
+}
+
+@media screen and (max-width: 569px) {
+  .menssage p {
+    min-width: 50%;
+    margin: 0 25px;
+  }
+
+  .header {
+    padding: 25px;
+  }
+
+  .header-img img {
+    width: 3.56rem;
+  }
+}
