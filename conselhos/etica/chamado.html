@@ -9,7 +9,6 @@
     <link href="/assets/styles/2jxUGV.css" rel="stylesheet" />
     <link href="/assets/styles/MrQRpT.css" rel="stylesheet" />
     <link href="/assets/image/Flaticon.png" type="image/x-icon" rel="shortcut icon"/>
-    <link href="/assets/image/Flaticon.ico" type="image/x-icon" rel="shortcut icon"/>
 
     <!-- Google Analitycs -->
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -105,7 +104,7 @@
                 <h2>Iniciar Chamado</h2>
             </div>
             <div class="chamado">
-                <form id="formless" action="https://formsubmit.co/oi@evred.com.br" method="POST" enctype = "multipart/form-data">
+                <form id="formless" action="https://formsubmit.co/oi@evred.com.br" method="POST" enctype="multipart/form-data">
                   <div class="inputs-one">
                       <div class="float-name">
                           <label class="sr-only" for="name">Nome Completo</label>
@@ -162,12 +161,13 @@
                       <span>Enviar Chamado!</span>
                     </button>
                   </div>
-                  <input type = "hidden" name = "_ next" value = "https://evred.com.br/conselhos/obrigado.html">
-                  <input type = "hidden" name = "_ subject" value = "Chamado - Conselho de Ética | EVRED [Site]">
-                  <input type = "hidden" name = "_ autoresponse" value = "Parabéns! Essa é a cópia do chamado enviado.">
-                  <input type = "hidden" name = "_ webhook" value = "https://evred.com.br/advice/webhook/your">
-                  <input type="hidden" name="_template" value="box">
-                  <input type = "hidden" name = "_ captcha" value = "false">
+                  <div class="hiddens">
+                    <input type="hidden" name="_next" value="https://pages.evred.com.br/conselhos/obrigado.html">
+                    <input type="hidden" name="_subject" value="Chamado - Conselho de Ética | EVRED [Site]">
+                    <input type="hidden" name="_autoresponse" value="Parabéns! Essa é a cópia do chamado enviado.">
+                    <input type="hidden" name="_template" value="box">
+                    <input type="hidden" name="_captcha" value="false">
+                  </div>
                </form>
             </div>
             <div class="chamado-adds">
