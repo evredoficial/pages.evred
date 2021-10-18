@@ -149,9 +149,10 @@
                   <div class="float-archived">
                       <label for="files" class="sr-only">Enviar Arquivo <span>(Opcional)</span></label>
                       <input type="file" name="Arquivo" id="files" placeholder="Enviar Arquivo (opcional)" accept=" image/*, audio/*, video/*, .pdf">
+                      <input type="hidden" name="MAX_FILE_SIZE" value="25000000"/>
                   </div>
                   <div class="send-recaptcha">
-                    <div class="g-recaptcha" type="hidden"
+                    <div class="g-recaptcha"
                       data-sitekey="6LfzxJEcAAAAAJr_jTds_dFsyQu9Zhe06CV_GjtH"
                       data-callback="onSubmit"
                       data-size="invisible">
@@ -180,10 +181,11 @@
     </main>
     <footer class="only-footer">
         <section class="onlys-footer">
-            <p>EVRED © 2021 | Todos Dieitos Reservados.</p>
+            <p>EVRED © <span id="year"></span> | Todos Dieitos Reservados.</p>
         </section>
     </footer>
 </body>
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script type="text/javascript" src="/assets/javascript/MrQRpT.js"></script>
+<script type="text/javascript" src="/assets/javascript/year.js"></script>
 </html>
